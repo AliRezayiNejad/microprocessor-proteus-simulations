@@ -1,0 +1,6 @@
+lcd_init(16);
+lcd_gotoxy(6,0);
+lcd_putsf("ALI KIMIA");
+while (1)
+      {
+      }

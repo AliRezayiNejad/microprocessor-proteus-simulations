@@ -1,0 +1,13 @@
+void main (void){
+int i;
+lcd_init(16);
+while (1){
+for(i=0;i<16;i++) {
+ lcd_gotoxy(i,0);
+ lcd_putsf("*"); delay_ms(200);
+ lcd_clear(); }
+ for(i=15;i>=0;i--) {
+ lcd_gotoxy(i,1);
+ lcd_putsf("*"); delay_ms(200);
+ lcd_clear(); }
+ }}

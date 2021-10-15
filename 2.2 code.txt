@@ -1,0 +1,18 @@
+int i;
+lcd_init(20);
+while (1){
+ for(i=0;i<=19;i++) {
+ lcd_gotoxy(i,0); lcd_putsf("*"); delay_ms(50);}
+ for(i=0;i<=3;i++) {
+ lcd_gotoxy(19,i); lcd_putsf("*"); delay_ms(50);}
+ for(i=18;i>=1;i--) {
+ lcd_gotoxy(i,3); lcd_putsf("*"); delay_ms(50);}
+ for(i=2;i>=1;i--) {
+ lcd_gotoxy(1,i); lcd_putsf("*"); delay_ms(50);}
+ for(i=2;i<=17;i++) {
+ lcd_gotoxy(i,1); lcd_putsf("*"); delay_ms(50);}
+ for(i=2;i<=3;i++) {
+ lcd_gotoxy(17,i); lcd_putsf("*"); delay_ms(50); }
+ for(i=17;i>=3;i--) {
+ lcd_gotoxy(i,2); lcd_putsf("*"); delay_ms(50); }
+ }
